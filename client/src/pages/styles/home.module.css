@@ -1,0 +1,144 @@
+
+/* START NAVBAR */
+.navbar {
+    padding: 20px 5% 10px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.navbar .navContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navContent .logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navContent .logo p {
+    margin: 10px 0;
+}
+
+.navContent .logo p span {
+    color: var(--hover-link);
+}
+
+.navContent .list {
+    margin: 15px 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.navContent .list li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.navContent .list li a:hover {
+    color: var(--hover-link);
+    transition: .2s;
+}
+
+.navContent .navButtons {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.navContent .navButtons .btnLogin {
+    background-image: none;
+    color: var(--hover-link);
+}
+
+.navContent .navButtons .btnLogin:hover {
+    color: var(--white-color);
+    background-image: linear-gradient(
+    90deg, 
+    #0c7d56,
+    var(--hover-link)
+    );
+    transition: .2s;
+}
+/* END NAVBAR */
+
+/* START HERO SECTION */
+.HeroSection {
+    display: flex;
+    width: 90%;
+    height: 75vh;
+    margin: 2rem auto;
+}
+
+.HeroSection .content {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.HeroSection .content h1 {
+    font-size: 3rem;
+    color: var(--header-color);
+}
+
+.HeroSection .content p {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.HeroSection .content button {
+    margin: 20px 0;
+}
+
+.HeroSection .image {
+    width: 50%;
+}
+
+.HeroSection .image img {
+    display: block;
+    width: 80%;
+    margin: 0 auto 0 0;
+}
+/* END HERO SECTION */
+
+/* START partners */
+.partnersSection {
+    margin: 2rem 0;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.partnersSection h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.partnersSection h1 span {
+    color: var(--header-color);
+}
+
+.partnersSection .partners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    width: 90%;
+    margin: 30px auto 10px;
+}
+
+.partnersSection .partners .partner img {
+    width: 100%;
+    height: 100px;
+    filter: grayscale(100%);
+}
+
+.partnersSection .partners .partner img:hover {
+    filter: none;
+    transition: .2s;
+}

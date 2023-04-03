@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --main-color: #212121;
+  --background-color: #f9f8f6;
+  --white-color: #f9f8f6;
+  --hover-link: #14d18f;
+  --header-color: #10a772;
+  --font-color: #646464;
+}
+
+@font-face {
+  font-family: Tajawal;
+  src: url(./fonts/Tajawal/Tajawal-Regular.ttf);
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  font-family: Tajawal;
+  color: var(--main-color);
+}
+
+/* Button */
+.btn {
+  width: 120px;
+  padding: 10px 0;
+  margin-right: 10px;
+  background-image: linear-gradient(
+    90deg, 
+    #0c7d56,
+    var(--hover-link)
+  );
+  border: 1px solid var(--hover-link);
+  border-radius: 10px;
+  color: var(--white-color);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-image: none;
+  color: var(--hover-link);
+  transition: .2s;
+}
